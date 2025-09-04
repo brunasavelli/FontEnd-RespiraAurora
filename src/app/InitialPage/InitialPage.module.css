@@ -1,0 +1,48 @@
+.container {
+    background-image: url('/images/background-RespiraAurora.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    filter: brightness(70%);
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.leftBox {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(27, 27, 27, 0.596);
+    text-align: center;
+    padding: 20px;
+    height: 80vh;
+    margin: 50px;
+    border-radius: 10px;
+}
+
+.title {
+    color: white;
+    font-size: 5em;
+    margin-bottom: 20px;
+}
+
+.rightBox {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.596);
+    text-align: center;
+    padding: 20px;
+    height: 70vh;
+    margin: 50px;
+    border-radius: 10px;
+}
