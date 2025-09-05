@@ -1,14 +1,6 @@
 import "./globals.css";
 import localFont from "next/font/local";
 
-// const oswald = localFontal({
-//   src: [
-//     {
-      
-//     }
-//   ]
-// })
-
 export const metadata = {
     title: "Meu Projeto Next.js",
     description: "Projeto para mostrar tudo que eu sei",
@@ -20,7 +12,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
     return (
         <html lang="pt-BR">
-            <body>{children}</body>
+            <body>
+                <main>{children}</main>
+            </body>
         </html>
     );
 }

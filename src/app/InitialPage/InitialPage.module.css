@@ -13,11 +13,77 @@
     flex-direction: row;
 }
 
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    color: white;
+    z-index: 1000;
+    background: #11347477;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navList {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    list-style: none;
+    margin: 0 60px;
+    align-items: center;
+}
+
+.navItem {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s;
+    position: relative;
+}
+
+.navItem::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -3px;
+    transform: translateX(-50%) scaleX(0);
+    transform-origin: center;
+    width: 100%;
+    height: 2px;
+    background: #767998;
+    transition: transform 0.3s cubic-bezier(0.4,0,0.2,1);
+    border-radius: 2px;
+}
+
+.navItem:hover::after {
+    transform: translateX(-50%) scaleX(1);
+}
+
+.navItem:hover {
+    color: #767998;
+    cursor: pointer;
+}
+
+.logo {
+    height: 100px;
+    margin: 5px 20px;
+    transition: transform 0.3s;
+}
+
+.logo:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
 .leftBox {
     flex: 1;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: left;
     flex-direction: column;
     background-color: rgba(27, 27, 27, 0.596);
     text-align: center;
@@ -25,13 +91,94 @@
     height: 80vh;
     margin: 50px;
     border-radius: 10px;
+    margin-top: 150px;
+}
+
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 70%;
+    width: 100%;
 }
 
 .title {
     color: white;
-    font-size: 5em;
-    margin-bottom: 20px;
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    width: 92.5%;
+    font-weight: bold;
 }
+
+.text {
+    color: white;
+    font-size: 1em;
+    margin-bottom: 20px;
+    text-align: left;
+    width: 90%;
+}
+
+.buttonsContainer {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    justify-content: space-between;
+}
+
+.wipeButton:active {
+    transform: scale(0.95);
+    transition: transform 0.1s;
+}
+
+.wipeActive {
+    transform: scale(1.2) !important;
+    opacity: 1 !important;
+    clip-path: circle(90px at var(--wipe-x, 50%) var(--wipe-y, 50%));
+    transition: transform 0.3s, opacity 0.3s, clip-path 0.3s;
+}
+
+/* Botão com efeito wipe animado */
+.wipeButton {
+    position: relative;
+    overflow: hidden;
+    padding: 16px 40px;
+    background: #282828;
+    color: white;
+    border-radius: 32px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: color 0.2s;
+    box-shadow: #282828 0px 3px 8px;
+}
+
+.wipeButtonText {
+    position: relative;
+    z-index: 2;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.wipeEffect {
+    pointer-events: none;
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(90deg, #69c9a8, #767998, #38717d, #7d69c9, #69c9b7);
+    transform: scale(0);
+    opacity: 0.7;
+    border-radius: inherit;
+    transition: transform 0.3s, opacity 0.3s;
+    z-index: 1;
+}
+
+.wipeButton:hover .wipeEffect {
+    transform: scale(1.2);
+    opacity: 1;
+    transition: transform 0.3s, opacity 0.3s;
+    /* O wipe segue o mouse */
+    clip-path: circle(120px at var(--wipe-x, 50%) var(--wipe-y, 50%));
+}
+
 
 .rightBox {
     flex: 1;
@@ -45,4 +192,5 @@
     height: 70vh;
     margin: 50px;
     border-radius: 10px;
+    margin-top: 150px;
 }
