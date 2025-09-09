@@ -13,6 +13,9 @@ export default function Header() {
             <nav className={styles.nav}>
                 <ul className={styles.navList}>
                     <li className={styles.navItem}>
+                        <Link href="/InitialPage" className={styles.navLink}>Initial</Link>
+                    </li>
+                    <li className={styles.navItem}>
                         <Link href="/Temas" className={styles.navLink}>Temas</Link>
                     </li>
                     <li className={styles.navItem}>
