@@ -1,5 +1,5 @@
 import "./globals.css";
-import Header from "@/components/Header/header";
+import Header from "../components/Header/page.jsx";
 
 export const metadata = {
     title: "Meu Projeto Next.js",

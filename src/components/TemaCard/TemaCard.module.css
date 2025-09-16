@@ -1,0 +1,293 @@
+.temaLink {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    width: 100%;
+}
+
+.temaCard {
+    position: relative;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 24px;
+    padding: 32px;
+    min-height: 280px;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    cursor: pointer;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 400px;
+}
+
+.temaCard::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 24px;
+    padding: 2px;
+    background: linear-gradient(45deg, 
+        rgba(255, 255, 255, 0.2) 0%, 
+        rgba(255, 255, 255, 0.05) 50%, 
+        rgba(255, 255, 255, 0.2) 100%);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: xor;
+    -webkit-mask-composite: xor;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.temaCard:hover {
+    transform: translateY(-12px) scale(1.02);
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.25);
+    box-shadow: 
+        0 25px 50px rgba(0, 0, 0, 0.3),
+        0 0 0 1px rgba(255, 255, 255, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.temaCard:hover::before {
+    opacity: 1;
+}
+
+.cardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.temaIcon {
+    border-radius: 12px;
+    object-fit: cover;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+    margin-bottom: 16px;
+}
+
+.temaNivel {
+    background: rgba(255, 255, 255, 0.15);
+    color: rgba(255, 255, 255, 0.95);
+    padding: 8px 16px;
+    border-radius: 16px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Nível iniciante */
+.nivelIniciante {
+    background: rgba(34, 197, 94, 0.623) !important;
+    color: white !important;
+    border: 1px solid rgba(34, 197, 94, 0.4) !important;
+    box-shadow: 0 2px 8px rgba(34, 197, 94, 0.3);
+}
+
+/* Nível intermediário */
+.nivelIntermediario {
+    background: rgba(255, 140, 0, 0.623) !important;
+    color: white !important;
+    border: 1px solid rgba(255, 140, 0, 0.6) !important;
+    box-shadow: 0 2px 8px rgba(255, 140, 0, 0.4);
+}
+
+/* Nível avançado */
+.nivelAvancado {
+    background: rgba(255, 0, 0, 0.623) !important;
+    color: white !important;
+    border: 1px solid rgba(255, 0, 0, 0.6) !important;
+    box-shadow: 0 2px 8px rgba(255, 0, 0, 0.4);
+}
+
+.temaTitle {
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin: 0 0 12px 0;
+    font-family: 'Oswald', sans-serif;
+    line-height: 1.3;
+    letter-spacing: -0.01em;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.temaCategoria {
+    display: inline-block;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 16px;
+    opacity: 0.8;
+}
+
+.temaDescricao {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 24px;
+    flex: 1;
+    font-weight: 300;
+}
+
+.line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.temaDuration {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.temaDuration svg {
+    opacity: 0.8;
+}
+
+.temaButton {
+    background: rgba(255, 255, 255, 0.12);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 12px 24px;
+    border-radius: 16px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    backdrop-filter: blur(15px);
+    letter-spacing: 0.3px;
+}
+
+.temaButton:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.4);
+    transform: scale(1.05) translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.temaButton svg {
+    transition: transform 0.3s ease;
+}
+
+.temaButton:hover svg {
+    transform: translateX(4px);
+}
+
+/* Animações */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.temaCard {
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+.temaCard[data-category="bem-estar"] {
+    background: linear-gradient(135deg, rgba(103, 115, 255, 0.1) 0%, rgba(255, 255, 255, 0.08) 100%);
+}
+
+.temaCard[data-category="mental"] {
+    background: linear-gradient(135deg, rgba(240, 147, 251, 0.1) 0%, rgba(255, 255, 255, 0.08) 100%);
+}
+
+.temaCard[data-category="performance"] {
+    background: linear-gradient(135deg, rgba(79, 172, 254, 0.1) 0%, rgba(255, 255, 255, 0.08) 100%);
+}
+
+.temaCard[data-category="descanso"] {
+    background: linear-gradient(135deg, rgba(168, 237, 234, 0.1) 0%, rgba(255, 255, 255, 0.08) 100%);
+}
+
+.temaNivel:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+}
+
+.temaDuration:hover {
+    color: rgba(255, 255, 255, 0.9);
+    transform: translateY(-1px);
+}
+
+.temaCard:active {
+    transform: translateY(-8px) scale(0.98);
+}
+
+.temaButton:active {
+    transform: scale(0.95);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .temaCard {
+        padding: 24px;
+        min-height: 250px;
+    }
+    
+    .temaTitle {
+        font-size: 1.4rem;
+    }
+    
+    .cardHeader {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+    
+    .temaIcon {
+        width: 35px !important;
+        height: 35px !important;
+    }
+    
+    .cardFooter {
+        flex-direction: column;
+        gap: 16px;
+        align-items: stretch;
+    }
+    
+    .temaButton {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .temaCard {
+        padding: 20px;
+        min-height: 220px;
+    }
+    
+    .temaTitle {
+        font-size: 1.3rem;
+    }
+    
+    .temaDescricao {
+        font-size: 0.95rem;
+    }
+}
