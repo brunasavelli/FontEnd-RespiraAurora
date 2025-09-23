@@ -84,7 +84,6 @@
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* Nível iniciante */
 .nivelIniciante {
     background: rgba(34, 197, 94, 0.623) !important;
     color: white !important;
@@ -92,7 +91,6 @@
     box-shadow: 0 2px 8px rgba(34, 197, 94, 0.3);
 }
 
-/* Nível intermediário */
 .nivelIntermediario {
     background: rgba(255, 140, 0, 0.623) !important;
     color: white !important;
@@ -100,7 +98,6 @@
     box-shadow: 0 2px 8px rgba(255, 140, 0, 0.4);
 }
 
-/* Nível avançado */
 .nivelAvancado {
     background: rgba(255, 0, 0, 0.623) !important;
     color: white !important;
