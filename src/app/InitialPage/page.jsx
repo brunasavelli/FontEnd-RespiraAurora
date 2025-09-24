@@ -37,22 +37,32 @@ export default function InitialPage() {
                 <p className={styles.textBottom}>Seja para iniciar bem o dia, enfrentar momentos de tensão ou finalizar a noite com tranquilidade. Explore diversos conteúdos e todas as experiências que o app oferece:</p>
 
                 <div className={styles.boxes}>
-                    <div className={styles.box}>
-                        <FaCloudMoon size={70} />
-                        <h3>Dormir melhor</h3>
-                    </div>
-                    <div className={styles.box}>
-                        <GiMeditation size={70} />
-                        <h3>Diminuir o estresse</h3>
-                    </div>
-                    <div className={styles.box}>
-                        <FaHeadSideVirus size={70} />
-                        <h3>Melhora a saúde mental</h3>
-                    </div>
-                    <div className={styles.box}>
-                        <MdLocalActivity size={70} />
-                        <h3>Enfrentar desafios</h3>
-                    </div>
+                    <Link href="https://www.youtube.com/watch?v=dfi11cxr1NM" target="_blank">
+                        <div className={styles.box}>
+                            <FaCloudMoon size={70} />
+                            <h3>Dormir melhor</h3>
+                        </div>
+                    </Link>
+                    <Link href="https://www.youtube.com/watch?v=D7iRTG0J1d4" target="_blank">
+                        <div className={styles.box}>
+                            <GiMeditation size={70} />
+                            <h3>Diminuir o estresse</h3>
+                        </div>
+                    </Link>
+                    
+                    <Link href="https://saude.mpu.mp.br/noticias/beneficios-da-meditacao-para-a-saude-mental" target="_blank">
+                        <div className={styles.box}>
+                            <FaHeadSideVirus size={70} />
+                            <h3>Melhora a saúde mental</h3>
+                        </div>
+                    </Link>
+                    
+                    <Link href="https://www.youtube.com/watch?v=wZSLm6jLQYo" target="_blank">
+                        <div className={styles.box}>
+                            <MdLocalActivity size={70} />
+                            <h3>Enfrentar desafios</h3>
+                        </div>
+                    </Link>
                 </div>
             </div>
         </div>
