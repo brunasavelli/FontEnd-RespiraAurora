@@ -263,6 +263,59 @@
     font-weight: 300;
 }
 
+.toastContainer {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1rem;
+    color: #333;
+    z-index: 1001 !important;
+    top: 140px !important;
+}
+
+.toastContainer {
+    border-radius: 12px !important;
+    backdrop-filter: blur(10px) !important;
+    background: rgba(255, 255, 255, 0.95) !important;
+    color: #333 !important;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+
+.toastContainer--success {
+    background: rgba(34, 197, 94, 0.95) !important;
+    color: white !important;
+    border: 1px solid rgba(34, 197, 94, 0.3) !important;
+}
+
+.toastContainer--error {
+    background: rgba(239, 68, 68, 0.95) !important;
+    color: white !important;
+    border: 1px solid rgba(239, 68, 68, 0.3) !important;
+}
+
+.toastContainer--info {
+    background: rgba(59, 130, 246, 0.95) !important;
+    color: white !important;
+    border: 1px solid rgba(59, 130, 246, 0.3) !important;
+}
+
+.toastContainer--warning {
+    background: rgba(245, 158, 11, 0.95) !important;
+    color: white !important;
+    border: 1px solid rgba(245, 158, 11, 0.3) !important;
+}
+
+.toastContainer .Toastify__progress-bar {
+    background: rgba(255, 255, 255, 0.7) !important;
+}
+
+.toastContainer .Toastify__close-button {
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.toastContainer .Toastify__close-button:hover {
+    color: white !important;
+}
+
 /* Animações */
 @keyframes fadeInUp {
     from {

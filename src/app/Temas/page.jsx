@@ -114,6 +114,7 @@ export default function Temas() {
                 pauseOnFocusLoss
                 draggable
                 pauseOnHover
+                className={styles.toastContainer}
             />
         </div>
     );
