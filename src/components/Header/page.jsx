@@ -8,7 +8,7 @@ export default function Header() {
     return (
         <div className={styles.header}>
             <Link href="/InitialPage">
-                <img src="/images/auroraBoreal01.png" alt="Logo Respira Aurora" className={styles.logo} />
+                <img src="/images/logo.png" alt="Logo Respira Aurora" className={styles.logo} />
             </Link>
             <nav className={styles.nav}>
                 <ul className={styles.navList}>

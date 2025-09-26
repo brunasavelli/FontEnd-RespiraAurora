@@ -2,7 +2,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 99%;
     height: 120px;
     color: white;
     z-index: 1000;
@@ -11,7 +11,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.719);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.534);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-bottom-left-radius: 20px;
@@ -61,8 +61,8 @@
 }
 
 .logo {
-    height: 80px;
-    margin: 5px 20px;
+    height: 120px;
+    margin: 5px 15px;
     transition: transform 0.3s;
 }
 
