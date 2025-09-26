@@ -1,14 +1,24 @@
 .container {
-    background-image: url('/images/background-RespiraAurora.jpg');
+    background-image: url('/images/background-AuroraBoreal.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
-    filter: brightness(70%);
     background-attachment: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
+    z-index: 1;
+    padding-top: 100px;
+}
+.container::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    background: rgba(0, 0, 0, 0.541);
+    pointer-events: none;
+    border-radius: inherit;
 }

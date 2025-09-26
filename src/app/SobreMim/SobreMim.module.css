@@ -5,25 +5,22 @@
     background-repeat: no-repeat;
     min-height: 100vh;
     width: 100%;
-    filter: brightness(0.7);
+    background-attachment: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 40px 20px;
-    position: relative;
-    overflow: hidden;
+    flex-direction: column;
+    z-index: 1;
+    padding-top: 100px;
 }
-
 .container::before {
-    content: '';
+    content: "";
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: radial-gradient(circle at 30% 70%, rgba(147, 51, 234, 0.1) 0%, transparent 50%),
-                radial-gradient(circle at 70% 30%, rgba(59, 130, 246, 0.1) 0%, transparent 50%);
-    z-index: -1;
+    inset: 0;
+    z-index: 0;
+    background: rgba(0, 0, 0, 0.541);
+    pointer-events: none;
+    border-radius: inherit;
 }
 
 .card {
