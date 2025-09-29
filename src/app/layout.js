@@ -3,8 +3,8 @@ import Header from "../components/Header/page.jsx";
 import Footer from "./../components/Footer/page.jsx";
 
 export const metadata = {
-    title: "Meu Projeto Next.js",
-    description: "Projeto para mostrar tudo que eu sei",
+    title: "Respira Aurora",
+    description: "Site de Meditação e Bem-Estar",
     icons: {
         icon: "/icons/favicon.ico",
     },
