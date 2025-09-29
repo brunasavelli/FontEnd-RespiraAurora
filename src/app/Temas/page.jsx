@@ -7,7 +7,7 @@ import Link from 'next/link';
 import axios from 'axios';
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import TemaCard from '../../components/TemaCard/TemaCard';
+import TemaCard from '../../components/TemaCard/page';
 import styles from './Temas.module.css';
 
 export default function Temas() {

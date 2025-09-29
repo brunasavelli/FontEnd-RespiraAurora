@@ -1,5 +1,6 @@
 import "./globals.css";
 import Header from "../components/Header/page.jsx";
+import Footer from "./../components/Footer/page.jsx";
 
 export const metadata = {
     title: "Meu Projeto Next.js",
@@ -15,6 +16,7 @@ export default function RootLayout({ children }) {
             <body>
                 <Header />
                 <main>{children}</main>
+                <Footer />
             </body>
         </html>
     );
