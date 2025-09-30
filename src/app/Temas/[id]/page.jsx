@@ -38,6 +38,9 @@ export default function TemaPage({ params }) {
     return (
         <div className={styles.container}>
             <div className={styles.cardsContainer}>
+                <Link href="/Temas">
+                    <img src="/images/arrow.png" alt="ícone de voltar" className={styles.backButton} />
+                </Link>
                 <div className={`${styles.card} ${isStarted ? styles.cardSlideLeft : ''}`}>
                     {theme && (
                         <div>
