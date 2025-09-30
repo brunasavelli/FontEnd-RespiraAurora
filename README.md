@@ -3,12 +3,12 @@
 ## 01. Clone este repositório na pasta desejada e instale as dependências:
 Abra o terminal do seu computador na pasta desejada e clone esse repositório:
 ```bash
-git clone https://github.com/brunasavelli/FontEnd-RespiraAurora.git
+git clone https://github.com/brunasavelli/FrontEnd-RespiraAurora.git
 ```
 
 Entre no arquivo:
 ```bash
-cd FontEnd-RespiraAurora
+cd FrontEnd-RespiraAurora
 ```
 
 Instale as dependências:
