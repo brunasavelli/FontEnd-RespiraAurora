@@ -61,12 +61,16 @@ export default function Temas() {
                     </div>
                 ) : error ? (
                     <div className={styles.errorContainer}>
-                        <p>❌ Erro: {error}</p>
+                        <div className={styles.errorMessage}>
+                            <img src="/icons/errorIcon.png" alt="Ícone de fechar" />
+                            <p>Erro: {error}</p>
+                        </div>
                         <button
                             onClick={fetchTemas}
                             className={styles.retryButton}
                         >
-                            🔄 Tentar Novamente
+                            <img src="/icons/retryIcon.png" alt="Ícone de tentar novamente" />
+                            Tentar Novamente
                         </button>
                     </div>
                 ) : (

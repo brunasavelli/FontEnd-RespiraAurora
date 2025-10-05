@@ -34,19 +34,22 @@ export default function AuroraPessoal() {
                         className={`${styles.tabButton} ${activeTab === 'perfil' ? styles.activeTab : ''}`}
                         onClick={() => setActiveTab('perfil')}
                     >
-                        👤 Perfil
+                        <img src="/icons/userIcon.png" alt="Ícone de usuário" className={styles.icon} />
+                        Perfil
                     </button>
                     <button
                         className={`${styles.tabButton} ${activeTab === 'progresso' ? styles.activeTab : ''}`}
                         onClick={() => setActiveTab('progresso')}
                     >
-                        📊 Progresso
+                        <img src="/icons/analyticIcon.png" alt="Ícone de gáfico" className={styles.icon} />
+                        Progresso
                     </button>
                     <button
                         className={`${styles.tabButton} ${activeTab === 'conquistas' ? styles.activeTab : ''}`}
                         onClick={() => setActiveTab('conquistas')}
                     >
-                        🏆 Conquistas
+                        <img src="/icons/trophyIcon.png" alt="" className={styles.icon}/>
+                        Conquistas
                     </button>
                 </div>
 
@@ -80,14 +83,20 @@ export default function AuroraPessoal() {
                                 <h2 className={styles.cardTitle}>Preferências</h2>
                                 <div className={styles.preferencesList}>
                                     <div className={styles.preferenceItem}>
-                                        <span>🎵 Sons ambiente</span>
+                                        <span className={styles.iconText}>
+                                            <img src="/icons/songIcon.png" alt="Ícone de nota musical" className={styles.icon}/>
+                                            Sons ambiente
+                                        </span>
                                         <label className={styles.switch}>
                                             <input type="checkbox" defaultChecked />
                                             <span className={styles.slider}></span>
                                         </label>
                                     </div>
                                     <div className={styles.preferenceItem}>
-                                        <span>🔔 Notificações</span>
+                                        <span className={styles.iconText}>
+                                            <img src="/icons/bellIcon.png" alt="Ícone de sino" className={styles.icon}/>
+                                            Notificações
+                                        </span>
                                         <label className={styles.switch}>
                                             <input type="checkbox" defaultChecked />
                                             <span className={styles.slider}></span>
@@ -103,22 +112,30 @@ export default function AuroraPessoal() {
                         <div className={styles.progressoTab}>
                             <div className={styles.statsGrid}>
                                 <div className={styles.statCard}>
-                                    <div className={styles.statIcon}>🧘‍♀️</div>
+                                    <div className={styles.statIcon}>
+                                        <img src="/icons/relaxIcon.png" alt="Ícone de relaxamento" className={styles.icon2} />
+                                    </div>
                                     <h3 className={styles.statNumber}>0</h3>
                                     <p className={styles.statLabel}>Sessões Concluídas</p>
                                 </div>
                                 <div className={styles.statCard}>
-                                    <div className={styles.statIcon}>⏱️</div>
+                                    <div className={styles.statIcon}>
+                                        <img src="/icons/timerIcon.png" alt="Ícone de cronômetro" className={styles.icon2} />
+                                    </div>
                                     <h3 className={styles.statNumber}>0</h3>
                                     <p className={styles.statLabel}>Minutos Meditados</p>
                                 </div>
                                 <div className={styles.statCard}>
-                                    <div className={styles.statIcon}>🔥</div>
+                                    <div className={styles.statIcon}>
+                                        <img src="/icons/fireIcon.png" alt="Ícone de fogo" className={styles.icon2} />
+                                    </div>
                                     <h3 className={styles.statNumber}>0</h3>
                                     <p className={styles.statLabel}>Dias Consecutivos</p>
                                 </div>
                                 <div className={styles.statCard}>
-                                    <div className={styles.statIcon}>🎯</div>
+                                    <div className={styles.statIcon}>
+                                        <img src="/icons/targetIcon.png" alt="Ícone de alvo" className={styles.icon2} />
+                                    </div>
                                     <h3 className={styles.statNumber}>0</h3>
                                     <p className={styles.statLabel}>Metas Atingidas</p>
                                 </div>
@@ -128,7 +145,9 @@ export default function AuroraPessoal() {
                             <div className={styles.card}>
                                 <h2 className={styles.cardTitle}>Atividade Recente</h2>
                                 <div className={styles.emptyState}>
-                                    <div className={styles.emptyIcon}>📈</div>
+                                    <div className={styles.emptyIcon}>
+                                        <img src="/icons/graphicIcon.png" alt="Ícone de gráfico" />
+                                    </div>
                                     <p>Comece sua primeira sessão para ver seu progresso aqui!</p>
                                 </div>
                             </div>
@@ -140,28 +159,48 @@ export default function AuroraPessoal() {
                         <div className={styles.conquistasTab}>
                             <div className={styles.achievementsGrid}>
                                 <div className={styles.achievementCard}>
-                                    <div className={styles.achievementIcon}>🌟</div>
+                                    <div className={styles.achievementIcon}>
+                                        <img src="/icons/starIcon.png" alt="Ícone de estrela" />
+                                    </div>
                                     <h3 className={styles.achievementTitle}>Primeira Sessão</h3>
                                     <p className={styles.achievementDesc}>Complete sua primeira meditação</p>
-                                    <div className={styles.achievementStatus}>🔒 Bloqueado</div>
+                                    <div className={styles.achievementStatus}>
+                                        <img src="/icons/padlockIcon.png" alt="Ícone de cadeado" className={styles.icon3} />
+                                        Bloqueado
+                                    </div>
                                 </div>
                                 <div className={styles.achievementCard}>
-                                    <div className={styles.achievementIcon}>💪</div>
+                                    <div className={styles.achievementIcon}>
+                                        <img src="/icons/exerciseIcon.png" alt="Ícone de halter" />
+                                    </div>
                                     <h3 className={styles.achievementTitle}>Constância</h3>
                                     <p className={styles.achievementDesc}>Medite por 7 dias consecutivos</p>
-                                    <div className={styles.achievementStatus}>🔒 Bloqueado</div>
+                                    <div className={styles.achievementStatus}>
+                                        <img src="/icons/padlockIcon.png" alt="Ícone de cadeado" className={styles.icon3} />
+                                        Bloqueado
+                                    </div>
                                 </div>
                                 <div className={styles.achievementCard}>
-                                    <div className={styles.achievementIcon}>⏰</div>
+                                    <div className={styles.achievementIcon}>
+                                        <img src="/icons/timerIcon.png" alt="Ícone de relógio" />
+                                    </div>
                                     <h3 className={styles.achievementTitle}>Maratonista</h3>
                                     <p className={styles.achievementDesc}>Acumule 60 minutos de meditação</p>
-                                    <div className={styles.achievementStatus}>🔒 Bloqueado</div>
+                                    <div className={styles.achievementStatus}>
+                                        <img src="/icons/padlockIcon.png" alt="Ícone de cadeado" className={styles.icon3} />
+                                        Bloqueado
+                                    </div>
                                 </div>
                                 <div className={styles.achievementCard}>
-                                    <div className={styles.achievementIcon}>🎯</div>
+                                    <div className={styles.achievementIcon}>
+                                        <img src="/icons/targetIcon.png" alt="Ícone de alvo" />
+                                    </div>
                                     <h3 className={styles.achievementTitle}>Explorador</h3>
                                     <p className={styles.achievementDesc}>Experimente 5 temas diferentes</p>
-                                    <div className={styles.achievementStatus}>🔒 Bloqueado</div>
+                                    <div className={styles.achievementStatus}>
+                                        <img src="/icons/padlockIcon.png" alt="Ícone de cadeado" className={styles.icon3} />
+                                        Bloqueado
+                                    </div>
                                 </div>
                             </div>
                         </div>

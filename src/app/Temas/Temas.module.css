@@ -231,6 +231,16 @@
     backdrop-filter: blur(10px);
 }
 
+.errorMessage {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 400;
+}
+
 .retryButton {
     background: rgba(255, 255, 255, 0.15);
     color: white;
@@ -243,6 +253,10 @@
     transition: all 0.3s ease;
     margin-top: 16px;
     backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
 }
 
 .retryButton:hover {
