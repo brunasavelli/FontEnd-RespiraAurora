@@ -61,7 +61,7 @@ export default function AuroraPessoal() {
                                 <div className={styles.infoGrid}>
                                     <div className={styles.infoItem}>
                                         <span className={styles.infoLabel}>Nome</span>
-                                        <span className={styles.infoValue}>Usuário</span>
+                                        <span className={styles.infoValue}>Nome do usuário</span>
                                     </div>
                                     <div className={styles.infoItem}>
                                         <span className={styles.infoLabel}>Membro desde</span>
