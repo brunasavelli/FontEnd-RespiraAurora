@@ -230,7 +230,6 @@
     padding-left: 8px;
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
     .mainCard {
         padding: 30px 24px;

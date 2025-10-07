@@ -242,3 +242,276 @@
     background-color: rgba(255, 255, 255, 0.2);
     cursor: pointer;
 }
+
+@media (max-width: 1024px) {
+    .container {
+        padding-top: 80px;
+    }
+
+    .topBox {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .leftBox {
+        height: auto;
+        margin: 20px;
+        padding: 30px 20px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .textContainer {
+        height: auto;
+        align-items: center;
+    }
+
+    .title {
+        font-size: 2.8em;
+        text-align: center;
+        width: 100%;
+    }
+
+    .text {
+        font-size: 1.05rem;
+        text-align: center;
+        width: 100%;
+    }
+
+    .buttonsContainer {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .rightBox {
+        height: auto;
+        margin: 20px;
+    }
+
+    .auroraBoreal {
+        width: 90%;
+        max-width: 500px;
+    }
+
+    .bottomBox {
+        padding: 100px 40px;
+        height: auto;
+    }
+
+    .subtitle {
+        font-size: 2rem;
+    }
+
+    .textBottom {
+        font-size: 1rem;
+        width: 80%;
+    }
+
+    .boxes {
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    .box {
+        width: 180px;
+        height: 140px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding-top: 60px;
+    }
+
+    .leftBox {
+        margin: 15px;
+        padding: 20px 15px;
+    }
+
+    .title {
+        font-size: 2.2em;
+        margin-bottom: 15px;
+    }
+
+    .text {
+        font-size: 0.95rem;
+    }
+
+    .buttonsContainer {
+        width: 100%;
+    }
+
+    .wipeButton {
+        padding: 14px 32px;
+    }
+
+    .wipeButtonText {
+        font-size: 1.1rem;
+    }
+
+    .rightBox {
+        margin: 15px;
+    }
+
+    .auroraBoreal {
+        width: 95%;
+        max-width: 400px;
+    }
+
+    .bottomBox {
+        padding: 80px 30px;
+    }
+
+    .subtitle {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+    }
+
+    .textBottom {
+        font-size: 0.95rem;
+        width: 90%;
+    }
+
+    .boxes {
+        gap: 14px;
+    }
+
+    .box {
+        width: 160px;
+        height: 130px;
+        padding: 16px;
+    }
+
+    .box svg {
+        width: 60px;
+        height: 60px;
+    }
+
+    .box h3 {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding-top: 40px;
+        background-attachment: scroll;
+    }
+
+    .leftBox {
+        margin: 10px;
+        padding: 15px 10px;
+    }
+
+    .title {
+        font-size: 1.8em;
+        margin-bottom: 12px;
+    }
+
+    .text {
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
+
+    .buttonsContainer {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .wipeButton {
+        padding: 12px 28px;
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .wipeButtonText {
+        font-size: 1rem;
+    }
+
+    .rightBox {
+        margin: 10px;
+    }
+
+    .auroraBoreal {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .bottomBox {
+        padding: 60px 20px;
+    }
+
+    .subtitle {
+        font-size: 1.5rem;
+        margin-bottom: 12px;
+    }
+
+    .textBottom {
+        font-size: 0.9rem;
+        width: 95%;
+    }
+
+    .boxes {
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+    }
+
+    .box {
+        width: 100%;
+        max-width: 280px;
+        height: 120px;
+        padding: 14px;
+    }
+
+    .box svg {
+        width: 50px;
+        height: 50px;
+    }
+
+    .box h3 {
+        font-size: 0.9rem;
+        margin-top: 8px;
+    }
+}
+
+@media (max-width: 360px) {
+    .title {
+        font-size: 1.5em;
+    }
+
+    .text {
+        font-size: 0.85rem;
+    }
+
+    .wipeButton {
+        padding: 10px 24px;
+    }
+
+    .wipeButtonText {
+        font-size: 0.95rem;
+    }
+
+    .subtitle {
+        font-size: 1.3rem;
+    }
+
+    .textBottom {
+        font-size: 0.85rem;
+    }
+
+    .box {
+        max-width: 240px;
+        height: 110px;
+    }
+
+    .box svg {
+        width: 45px;
+        height: 45px;
+    }
+
+    .box h3 {
+        font-size: 0.85rem;
+    }
+}
